@@ -1,0 +1,8 @@
+GLUON_SITE_FEEDS='ffgg_packages ssidchanger'
+
+PACKAGES_FFGG_PACKAGES_REPO=https://github.com/freifunkgg/packages-ffgg
+PACKAGES_FFGG_PACKAGES_COMMIT=6ec23e4c5cc0d7c15b3bbcab404ff3e08a8a3833
+
+PACKAGES_SSIDCHANGER_REPO=https://github.com/freifunk-nord/gluon-ssid-changer.git
+PACKAGES_SSIDCHANGER_BRANCH=2018.1.x
+PACKAGES_SSIDCHANGER_COMMIT=f6db033d6568ea27805c9694b20085b8dec5ba87

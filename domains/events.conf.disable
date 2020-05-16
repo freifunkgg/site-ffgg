@@ -1,0 +1,58 @@
+{
+	domain_names = { 
+		events = 'Events'
+	},
+	domain_seed = '0abd9b5d9d390cf6987791141e705e991a6b965a81ad468118e017de69c24bc5',
+
+	prefix6 = '2001:678:a8c:d010::/64',
+	prefix4 = '10.200.64.0/20',
+
+	wifi24 = {
+		ap = {
+			ssid = 'freifunk-gg.de',
+		},
+		mesh = {
+			id = 'ffgg-mesh_05:20:0A:12:00:28',
+		},
+	},
+	wifi5 = {
+		ap = {
+			ssid = 'freifunk-gg.de',
+		},
+		mesh = {
+			id = 'ffgg-mesh_05:20:0A:12:00:29',
+		},
+	},
+
+	next_node = {
+		name = { 'node.ffgg', 'ffgg.node', 'nextnode' },
+		ip6 = '2001:678:a8c:d010::2',
+	},
+
+	mesh = {
+        vxlan = false,
+        batman_adv = {
+            routing_algo = 'BATMAN_IV',
+        },
+
+	},
+
+	mesh_vpn = {
+		fastd = {
+			groups = {
+				backbone = {
+					peers = {
+						gw1 = {
+							key ='a671ec8485972511d1e41a8625c8fc72c62fd8f8080990150a7395d5d1359efa',
+							remotes = {'"gw1.freifunk-kitzingen.de" port 20641'},
+						},						
+						gw2 = {
+							key ='3fca808a9cd16f64b0cccd73478df2388c9849f7869b0a6435e28b9e31b143ec',
+							remotes = {'"gw2.freifunk-kitzingen.de" port 20642'},
+						},
+					},
+				},
+			},
+		},
+	},
+}
