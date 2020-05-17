@@ -1,6 +1,6 @@
 # Groß-Gerau Freifunk-Firmware Experimental
-### v0.0.1-exp-YYXX
-- Erstellt am XX.YY.2020
+### v0.0.1-exp-0517
+- Erstellt am 17.05.2020
 - Basis ist [Gluon v2020.1.2](https://gluon.readthedocs.io/en/v2020.1.2/releases/v2020.1.2.html)
 - Addons
   - Die Helper-Skripte 'nodeinfo' und 'meshinfo' sind enthalten.
