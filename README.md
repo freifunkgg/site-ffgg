@@ -8,7 +8,7 @@
 ## Beispiel anhand der Groß-Gerauer Experimental-Firmware
 
     
-Wenn Du Dir z.B. eine eigene **'Experimental'**-Firmware für das Groß-Gerauer Freifunk-Netz selber bauen möchtest, dann gehe wie folgt vor:
+Wenn Du Dir eine eigene Firmware für das Groß-Gerauer Freifunk-Netz selber bauen möchtest, z.B. eine eigene **'Experimental'**-Version, dann gehe wie folgt vor:
 
 1) Aktuell (Stand 05/2020) basiert die Experimental-Firmware-Konfiguration auf dem Gluon-Framework v2020.1.2. Daher evtl. etwas einlesen -> https://gluon.readthedocs.io/en/v2020.1.2
 
