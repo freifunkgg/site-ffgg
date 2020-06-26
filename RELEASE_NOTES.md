@@ -13,6 +13,52 @@
 - Erstellt am 10.06.2020
 - Basis ist [Gluon v2020.1.3](https://gluon.readthedocs.io/en/v2020.1.3/releases/v2020.1.3.html)
 - Optimierungen GG-Package '[cleanup-gluon-config](https://github.com/freifunkgg/packages-ffgg/tree/master/ffgg-cleanup-gluon-config)'
+- Unterstützung neuer Router-Hardware
+  - AVM
+     - FRITZ!Box 7312
+     - FRITZ!Box 7320
+     - FRITZ!Box 7330
+     - FRITZ!Box 7330 SL
+     - FRITZ!Box 7360 (v1, v2)
+     - FRITZ!Box 7360 SL
+     - FRITZ!Box 7362 SL
+     - FRITZ!Box 7412
+  - TP-Link
+     - Archer C6 v2
+     - Archer C2 (v1)
+     - Archer C20 (v1)
+     - Archer C20i
+     - Archer C50 (v1)
+     - TL-MR3020 (v3)
+     - TP-Link TL-WA801ND (v5)
+     - TP-Link TL-WR902AC (v3)
+  - GL.iNet
+     - GL-AR300M-Lite
+     - VIXMINI
+  - Netgear
+     - R7800
+     - EX6150 (v1)
+     - R6220
+  - Devolo 
+     - WiFi pro 1200e
+     - WiFi pro 1200i
+     - WiFi pro 1750c
+     - WiFi pro 1750e
+     - WiFi pro 1750i
+     - WiFi pro 1750x
+  - OCEDO
+     - Raccoon
+     - Panda
+  - Enterasys
+     - WS-AP3710i
+  - Xiaomi 
+     - MiWifi Mini
+- Entfernte Router-Hardware (die Firmware passt nicht mehr in den Flash-Speicher)
+  - ALFA Network
+     - Hornet-UB
+     - Tube2H
+     - N2
+     - N5
 
 #### Known Issues
 - Ubiquiti EdgeRouter X und X-SFP Router könen durch ein Sysupgrade, von Gluon v2019.x auf diese Gluon-Version, gebrickt werden (siehe: [Gluon-Issue #1937](https://github.com/freifunk-gluon/gluon/issues/1937)).
