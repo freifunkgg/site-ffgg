@@ -24,7 +24,6 @@ GLUON_FEATURES := \
     web-logging
 
 GLUON_SITE_PACKAGES := \
-    haveged \
     iptables \
     gluon-ssid-changer \
     iwinfo \

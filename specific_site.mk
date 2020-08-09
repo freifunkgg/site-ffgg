@@ -127,7 +127,7 @@ UTIL_PACKAGES := \
 	joe \
 	iperf3 \
 	tcpdump \
-    htop
+	htop
 
 # Main combination
 USB_PACKAGES_COMBO := \
@@ -277,6 +277,25 @@ ifeq ($(GLUON_TARGET),ipq806x-generic)
 GLUON_SITE_PACKAGES += \
 	$(GENERAL_PACKAGES)
 endif
+
+#ipq806x-geode 
+ifeq ($(GLUON_TARGET),ipq806x-generic)
+GLUON_SITE_PACKAGES += \
+	$(GENERAL_PACKAGES)
+endif
+
+#ipq806x-legacy 
+ifeq ($(GLUON_TARGET),ipq806x-generic)
+GLUON_SITE_PACKAGES += \
+	$(GENERAL_PACKAGES)
+endif
+
+#ipq806x-64 
+ifeq ($(GLUON_TARGET),ipq806x-generic)
+GLUON_SITE_PACKAGES += \
+	$(GENERAL_PACKAGES)
+endif
+
 
 #lantiq-xrx200 
 ifeq ($(GLUON_TARGET),lantiq-xrx200)

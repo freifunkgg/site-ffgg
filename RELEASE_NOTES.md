@@ -1,5 +1,30 @@
 # Groß-Gerau Freifunk-Firmware Experimental
 
+### v0.0.6-exp-XXYY
+- Erstellt am YY.XX.2020
+- Basis ist [Gluon v2020.2](https://gluon.readthedocs.io/en/latest/releases/v2020.2.html#)
+- Anpassungen der [Site-Patches](https://gitea.indie-freifunk.net/oszilloskop/site-ffffm/src/branch/top/patches) an Gluon v2020.2
+- Unterstützung neuer Router-Hardware
+  - GL.iNet
+     - GL-AR750S
+  - TP-Link
+     - CPE220 (v3)
+  - EnGenius
+     - ENS620EXT
+  - Linksys
+     - EA6350 (v3)
+  - TP-Link
+     - TD-W8970
+  - NETGEAR
+     - DGN3500B
+  - Cudy
+     - WR1000
+  - x86-legacy
+     - Devices older than the Pentium
+
+#### Known Issues
+- Ubiquiti EdgeRouter X und X-SFP Router können durch ein Sysupgrade, von Gluon v2019.x auf diese Gluon-Version, gebrickt werden (siehe: [Gluon-Issue #1937](https://github.com/freifunk-gluon/gluon/issues/1937)).
+
 ### v0.0.5-exp-0616
 - Erstellt am 16.06.2020
 - Basis ist [Gluon v2020.1.3](https://gluon.readthedocs.io/en/v2020.1.3/releases/v2020.1.3.html), plus Gluon Commits des [v2020.1.x-Branches](https://github.com/freifunk-gluon/gluon/commits/v2020.1.x) bis zum 13.06.2020
