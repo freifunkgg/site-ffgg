@@ -10,27 +10,27 @@
     
 Wenn Du Dir eine eigene Firmware für das Groß-Gerauer Freifunk-Netz selber bauen möchtest, z.B. eine eigene **'Experimental'**-Version, dann gehe wie folgt vor:
 
-1) Aktuell (Stand 05/2020) basiert die Experimental-Firmware-Konfiguration auf dem Gluon-Framework v2020.1.2. Daher evtl. etwas einlesen -> https://gluon.readthedocs.io/en/v2020.1.2
+1) Aktuell (Stand 08/2020) basiert die Experimental-Firmware-Konfiguration auf dem Gluon-Framework v2020.2. Daher evtl. etwas einlesen -> https://gluon.readthedocs.io/en/v2020.2
 
-2) Eine Linux-Build-Maschine bereitstellen, möglichst mit Debian. Daran denken, dass ein Build für **ein** Hardware-Target bis zu 15 GByte freien Speicher auf dem Datenträger der Build-Maschine benötigt. Sollen **alle** Hardware-Targets gebaut werden, so werden ca. 140 GB benötigt (Stand 05/2020).
+2) Eine Linux-Build-Maschine bereitstellen, möglichst mit Debian. Daran denken, dass ein Build für **ein** Hardware-Target bis zu 15 GByte freien Speicher auf dem Datenträger der Build-Maschine benötigt. Sollen **alle** Hardware-Targets gebaut werden, so werden ca. 140 GB benötigt (Stand 08/2020).
 
 3) Alle Dependencies aus o.g. Gluon-Dokument müssen auf der Build-Maschine installiert sein.  
-Unter Debian oder Ubuntu sollte folgendes ausreichen (Stand 05/2020):
+Unter Debian oder Ubuntu sollte folgendes ausreichen (Stand 08/2020):
 ```
    sudo apt install git subversion python build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev wget time
 ```
 
-4) Clonen des Gluon '2020.1.x' Branches in das Verzeichnis ./gluon :
+4) Clonen des Gluon 'v2020.2' Branches in das Verzeichnis ./gluon :
 
 ```
-   git clone https://github.com/freifunk-gluon/gluon.git -b v2020.1.x gluon
+   git clone https://github.com/freifunk-gluon/gluon.git ./gluon -b v2020.2
+   cd gluon
 ```
 
 5) Clonen der Groß-Gerauer Site-Konfiguration aus dem 'experimental' Branch in das Verzeichnis ./gluon/site
 
 ```
-   cd gluon
-   git clone https://github.com/freifunkgg/site-ffgg -b experimental site 
+   git clone https://github.com/freifunkgg/site-ffgg ./site -b experimental
 ```
 
 6) Ggf. in der Datei **site.mk** etwas rumschrauben
@@ -88,13 +88,21 @@ Aktuell müssen leider noch einige Patches eingepflegt werden. Siehe https://git
    * x86-geode
    * x86-64
 
-9) Den Bau-Prozess anschmeissen für z.B. ar71xx-generic Hardware-Targets
+9a) Den Bau-Prozess anschmeissen für z.B. **ar71xx-generic** Hardware-Targets
 
 ```
    make GLUON_TARGET=ar71xx-generic -j4
 ```
 
    * `-j4` bedeutet, es werden bis zu vier Make-Threads verwendet.<br> 
+
+9b) Den Bau-Prozess anschmeissen für z.B. den als **BROKEN** markierten "Lemaker Banana Pi R1"
+
+```
+   make GLUON_TARGET=sunxi-cortexa7 GLUON_DEVICES=lemaker-banana-pro -j4 BROKEN=1
+```
+
+   * `BROKEN=1` bedeutet, es werden auch Images für als BROKEN markierte Devices erzeugt.
 
 10)
 Sollte es Problemen geben, dann einfach einen Build mit ausführlicheren Informationen (`V=s`) durchführen. Dazu darf aber nur ein Make-Thread (`-j1`) verwendet werden.
