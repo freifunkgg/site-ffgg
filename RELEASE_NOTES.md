@@ -1,7 +1,7 @@
 # Groß-Gerau Freifunk-Firmware Experimental
 
-### v0.0.6-exp-XXYY
-- Erstellt am YY.XX.2020
+### v0.0.6-exp-0809
+- Erstellt am 9.8.2020
 - Basis ist [Gluon v2020.2](https://gluon.readthedocs.io/en/latest/releases/v2020.2.html#)
 - Anpassungen der [Site-Patches](https://gitea.indie-freifunk.net/oszilloskop/site-ffffm/src/branch/top/patches) an Gluon v2020.2
 - Unterstützung neuer Router-Hardware
