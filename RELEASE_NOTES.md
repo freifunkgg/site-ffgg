@@ -1,5 +1,16 @@
 # Groß-Gerau Freifunk-Firmware Experimental
 
+### v0.0.7-exp-0907
+- Erstellt am 07.09.2020
+- Basis ist [Gluon v2020.2.1](https://gluon.readthedocs.io/en/v2020.2.1/releases/v2020.2.1.html)
+- Unterstützung neuer Router-Hardware
+  - TP-Link
+     - CPE210 v3.20
+- Testweise Einbindung eines ath9k-Bug-Patches (siehe Gluon-PullRequrst [#2114](https://github.com/freifunk-gluon/gluon/pull/2114))
+
+#### Known Issues
+- Ubiquiti EdgeRouter X und X-SFP Router können durch ein Sysupgrade, von Gluon v2019.x auf diese Gluon-Version, gebrickt werden (siehe: [Gluon-Issue #1937](https://github.com/freifunk-gluon/gluon/issues/1937)).
+
 ### v0.0.6-exp-0809
 - Erstellt am 9.8.2020
 - Basis ist [Gluon v2020.2](https://gluon.readthedocs.io/en/latest/releases/v2020.2.html#)
