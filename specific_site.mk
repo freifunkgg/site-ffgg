@@ -127,7 +127,8 @@ UTIL_PACKAGES := \
 	joe \
 	iperf3 \
 	tcpdump \
-	htop
+	htop \
+	nand-utils
 
 # Main combination
 USB_PACKAGES_COMBO := \
