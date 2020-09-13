@@ -169,9 +169,15 @@ GLUON_SITE_PACKAGES += \
 	$(GENERAL_PACKAGES)
 endif
 
+# ath79-generic
+ifeq ($(GLUON_TARGET),ath79-generic)
+GLUON_SITE_PACKAGES += \
+	$(GENERAL_PACKAGES)
+endif
+
 # x86-generic
 ifeq ($(GLUON_TARGET),x86-generic)
-# support the usb stack on x86 devices
+# support the usb stack on x86-generic devices
 # and add a few common USB NICs
 GLUON_SITE_PACKAGES += \
 	$(GENERAL_PACKAGES) \
@@ -189,6 +195,17 @@ GLUON_SITE_PACKAGES +=  \
 	$(USB_PACKAGES_COMBO) \
 	$(PCI_PACKAGES_NET) \
 	$(PCI_PACKAGES_X86)
+endif
+
+# x86-legacy
+# support the usb stack on x86-legacy devices
+# and add a few common USB NICs
+ifeq ($(GLUON_TARGET),x86-legacy)
+GLUON_SITE_PACKAGES += \
+	$(GENERAL_PACKAGES) \
+	$(USB_PACKAGES_COMBO) \
+	$(PCI_PACKAGES_NET) \
+	$(PCI_PACKAGES_X86) \
 endif
 
 # x86-geode
@@ -261,49 +278,30 @@ GLUON_SITE_PACKAGES += \
 	$(GENERAL_PACKAGES)
 endif
 
-#ramips-rt305x, no additional packages possible
+# ramips-rt305x, no additional packages possible
 ifeq ($(GLUON_TARGET),ramips-rt305x)
 GLUON_SITE_PACKAGES +=
 endif
 
-#ipq40xx-generic 
+# ipq40xx-generic 
 ifeq ($(GLUON_TARGET),ipq40xx-generic)
 GLUON_SITE_PACKAGES += \
 	$(GENERAL_PACKAGES)
 endif
 
-#ipq806x-generic 
+# ipq806x-generic 
 ifeq ($(GLUON_TARGET),ipq806x-generic)
 GLUON_SITE_PACKAGES += \
 	$(GENERAL_PACKAGES)
 endif
 
-#ipq806x-geode 
-ifeq ($(GLUON_TARGET),ipq806x-generic)
-GLUON_SITE_PACKAGES += \
-	$(GENERAL_PACKAGES)
-endif
-
-#ipq806x-legacy 
-ifeq ($(GLUON_TARGET),ipq806x-generic)
-GLUON_SITE_PACKAGES += \
-	$(GENERAL_PACKAGES)
-endif
-
-#ipq806x-64 
-ifeq ($(GLUON_TARGET),ipq806x-generic)
-GLUON_SITE_PACKAGES += \
-	$(GENERAL_PACKAGES)
-endif
-
-
-#lantiq-xrx200 
+# lantiq-xrx200 
 ifeq ($(GLUON_TARGET),lantiq-xrx200)
 GLUON_SITE_PACKAGES += \
 	$(GENERAL_PACKAGES)
 endif
 
-#lantiq-xway 
+# lantiq-xway 
 ifeq ($(GLUON_TARGET),lantiq-xway)
 GLUON_SITE_PACKAGES += \
 	$(GENERAL_PACKAGES)
