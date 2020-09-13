@@ -7,6 +7,7 @@
   - TP-Link
      - CPE210 v3.20
 - Testweise Einbindung eines ath9k-Bug-Patches (siehe Gluon-PullRequrst [#2114](https://github.com/freifunk-gluon/gluon/pull/2114))
+- Der GG-eigene Sysupgrade-Server wird jetzt abgefragt
 
 #### Known Issues
 - Ubiquiti EdgeRouter X und X-SFP Router können durch ein Sysupgrade, von Gluon v2019.x auf diese Gluon-Version, gebrickt werden (siehe: [Gluon-Issue #1937](https://github.com/freifunk-gluon/gluon/issues/1937)).
