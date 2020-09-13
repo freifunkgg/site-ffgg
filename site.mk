@@ -34,9 +34,9 @@ GLUON_SITE_PACKAGES := \
     ffgg-ath9k-broken-wifi-workaround \
     ffgg-autoupdater-use-site-conf-branch \
     -gluon-web-autoupdater \
-    cleanup-gluon-config
-    
-#   gluon-banner \
+
+#    cleanup-gluon-config
+
 
 #include specific_site.mk file
 include $(GLUON_SITEDIR)/specific_site.mk
