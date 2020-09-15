@@ -1,9 +1,9 @@
 # Groß-Gerau Freifunk-Firmware Experimental
 
-### v0.0.8-exp-0913
-- Erstellt am 13.09.2020
+### v0.0.8-exp-0915
+- Erstellt am 15.09.2020
 - Basis ist [Gluon v2020.2.1](https://gluon.readthedocs.io/en/v2020.2.1/releases/v2020.2.1.html)
-- Die Entwicklungsarbeiten an dem  Migrations-Package für Fremd-Community-Knoten '[cleanup-gluon-config](https://github.com/freifunkgg/packages-ffgg/tree/master/ffgg-cleanup-gluon-config)' sind abgeschlossen. Das Package wird temporär entfernt.  
+- Die Entwicklungsarbeiten an dem Migrations-Package für Fremd-Community-Knoten '[cleanup-gluon-config](https://github.com/freifunkgg/packages-ffgg/tree/master/ffgg-cleanup-gluon-config)' sind abgeschlossen. Das Package wird temporär entfernt.  
 
 #### Known Issues
 - Ubiquiti EdgeRouter X und X-SFP Router können durch ein Sysupgrade, von Gluon v2019.x auf diese Gluon-Version, gebrickt werden (siehe: [Gluon-Issue #1937](https://github.com/freifunk-gluon/gluon/issues/1937)).
