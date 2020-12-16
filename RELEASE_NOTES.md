@@ -7,6 +7,7 @@
 - Anpassungen am Package ath9k-broken-wifi-workaround. Siehe [https://github.com/freifunkgg/packages-ffgg/tree/master/ffgg-ath9k-broken-wifi-workaround](https://github.com/freifunkgg/packages-ffgg/tree/master/ffgg-ath9k-broken-wifi-workaround)
 - Entfernung des vormalig eingepflegten ath9k-Bug-Patches
 - Testweise Einbindung weiterer ath9k-Bug-Patches. Siehe [https://github.com/freifunk-gluon/gluon/pull/2114#issuecomment-733238757](https://github.com/freifunk-gluon/gluon/pull/2114#issuecomment-733238757)
+- Neue IP's für den Antana DL-Server
 
 #### Known Issues
 - Ubiquiti EdgeRouter X und X-SFP Router können durch ein Sysupgrade, von Gluon v2019.x auf diese Gluon-Version, gebrickt werden (siehe: [Gluon-Issue #1937](https://github.com/freifunk-gluon/gluon/issues/1937)).
