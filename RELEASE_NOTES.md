@@ -3,7 +3,7 @@
 ### v0.0.9-exp-1215
 - Erstellt am 15.12.2020
 - Basis ist [Gluon v2020.2.2](https://gluon.readthedocs.io/en/v2020.2.2/releases/v2020.2.2.html)
-- Das Package "zram-swap" funktioniert für ar71xx-tiny nicht mehr korrekt. Daher wurde es wieder entfernt. Siehe [https://forum.freifunk.net/t/zram-swap-fuer-ar71xx-tiny-32-4-geraete/21344/7](https://forum.freifunk.net/t/zram-swap-fuer-ar71xx-tiny-32-4-geraete/21344/7)
+- Das Package "zram-swap" funktioniert unter OpenWrt 19.07 für ar71xx-tiny Geräte nicht mehr korrekt. Daher wurde es wieder entfernt. Siehe [https://forum.freifunk.net/t/zram-swap-fuer-ar71xx-tiny-32-4-geraete/21344/7](https://forum.freifunk.net/t/zram-swap-fuer-ar71xx-tiny-32-4-geraete/21344/7)
 - Anpassungen am Package ath9k-broken-wifi-workaround. Siehe [https://github.com/freifunkgg/packages-ffgg/tree/master/ffgg-ath9k-broken-wifi-workaround](https://github.com/freifunkgg/packages-ffgg/tree/master/ffgg-ath9k-broken-wifi-workaround)
 - Entfernung des vormalig eingepflegten ath9k-Bug-Patches
 - Testweise Einbindung weiterer ath9k-Bug-Patches. Siehe [https://github.com/freifunk-gluon/gluon/pull/2114#issuecomment-733238757](https://github.com/freifunk-gluon/gluon/pull/2114#issuecomment-733238757)
